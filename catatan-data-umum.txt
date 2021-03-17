@@ -1,0 +1,43 @@
+Data Umum:
+
+Users:
+- id
+- nama
+- email
+- noTelepon
+- foto
+- username
+- password
+- role (Admin OPD, Kepala OPD)
+- domisili
+- akses (aktif, non aktif)
+- created_at
+- update_at
+
+Pegawai:
+- id
+- nip
+- nama
+- golonganPosisi
+- created_at
+- update_at
+
+Kantor:
+- id
+- alamat
+- facebook
+- instagram
+- twitter
+- notelepon
+- email
+- iframePeta
+- created_at
+- update_at
+
+WebsiteAplikasi:
+- id
+- namaWebAplikasi
+- situs
+- deskripsi
+- created_at
+- update_at
