@@ -14,30 +14,85 @@ Users:
 - created_at
 - update_at
 
-Pegawai:
+pegawai:
 - id
 - nip
 - nama
 - golonganPosisi
+- jenisKelamin
+- OAPNonOAP
 - created_at
 - update_at
 
-Kantor:
+kantor:
 - id
+- logo
+- namaOPD
 - alamat
+- notelepon
+- email
+- jamOperasional
+- WhatsApp
 - facebook
 - instagram
 - twitter
-- notelepon
-- email
-- iframePeta
 - created_at
 - update_at
 
-WebsiteAplikasi:
+websiteAplikasi:
 - id
-- namaWebAplikasi
+- jenis
+- namaSistem
 - situs
 - deskripsi
+- created_at
+- update_at
+
+Data Khusus:
+
+buku:
+- id
+- judul
+- penerbit
+- pengarang
+- jumlahHalaman
+- tahunTerbit
+- file
+- created_at
+- update_at
+
+penelitian:
+- id
+- judul
+- deskripsi
+- namaInstansiPenulis
+- file
+- created_at
+- update_at
+
+majalah:
+- id
+- judul
+- deskripsi
+- namaInstansiPenulis
+- file
+- created_at
+- update_at
+
+jurnal:
+- id
+- judul
+- deskripsi
+- namaInstansiPenulis
+- file
+- created_at
+- update_at
+
+mou:
+- id
+- judul
+- deskripsi
+- namaInstansiPenulis
+- file
 - created_at
 - update_at

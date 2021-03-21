@@ -78,9 +78,9 @@
     <a href="/admin/dashboard" class="brand-link">
       <img src="{!! asset('img/logo.png') !!}"
            alt="admin-lte Logo"
-           class="brand-image img-circle elevation-3"
+           class="brand-image img-square elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Data Parsial Litbang</span>
+      <span class="brand-text font-weight-light">Litbang</span>
     </a>
 
     <!-- Sidebar -->
@@ -148,31 +148,31 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link @php if($page == 'buku') {echo 'active';} @endphp">
+                <a href="/admin/data-khusus/buku" class="nav-link @php if($page == 'buku') {echo 'active';} @endphp">
                   <i class="fas fa-book nav-icon"></i>
                   <p>Buku</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link @php if($page == 'penelitian') {echo 'active';} @endphp">
+                <a href="/admin/data-khusus/penelitian" class="nav-link @php if($page == 'penelitian') {echo 'active';} @endphp">
                   <i class="fas fa-file-contract nav-icon"></i>
                   <p>Penelitian</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link @php if($page == 'majalah') {echo 'active';} @endphp">
+                <a href="/admin/data-khusus/majalah" class="nav-link @php if($page == 'majalah') {echo 'active';} @endphp">
                   <i class="far fa-newspaper nav-icon"></i>
                   <p>Majalah</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link @php if($page == 'jurnal') {echo 'active';} @endphp">
+                <a href="/admin/data-khusus/jurnal" class="nav-link @php if($page == 'jurnal') {echo 'active';} @endphp">
                   <i class="fas fa-file-alt nav-icon"></i>
                   <p>Jurnal</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link @php if($page == 'mou') {echo 'active';} @endphp">
+                <a href="/admin/data-khusus/mou" class="nav-link @php if($page == 'mou') {echo 'active';} @endphp">
                   <i class="fas fa-file-signature nav-icon"></i>
                   <p>MOU</p>
                 </a>
@@ -212,9 +212,11 @@
 <!-- jQuery -->
 <script src="{!! asset('admin-lte/plugins/jquery/jquery.min.js') !!}"></script>
 <!-- Script Modal -->
-<script src="{!! asset('js/script.js') !!}"></script>
+<!-- <script src="{!! asset('js/script.js') !!}"></script> -->
 <!-- Bootstrap 4 -->
 <script src="{!! asset('admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js') !!}"></script>
+<!-- ChartJS -->
+<script src="{!! asset('admin-lte/plugins/chart.js/Chart.min.js') !!}"></script>
 <!-- admin-lte App -->
 <script src="{!! asset('admin-lte/dist/js/adminlte.min.js') !!}"></script>
 <!-- admin-lte for demo purposes -->
@@ -324,6 +326,8 @@
 
   })
 </script>
+
+@yield('addScript')
 
 <script type="text/javascript">
   $(document).ready(function () {

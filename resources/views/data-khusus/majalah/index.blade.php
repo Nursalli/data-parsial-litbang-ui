@@ -6,12 +6,12 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Data Pegawai</h1>
+                <h1>Data Majalah</h1>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="/admin/dashboard">Home</a></li>
-                    <li class="breadcrumb-item active">Data Pegawai</li>
+                    <li class="breadcrumb-item active">Data Majalah</li>
                 </ol>
             </div>
         </div>
@@ -56,8 +56,8 @@
                     </div>
                     @endif
 
-                    <a class="btn btn-success" href="#" role="button" title="Tambah Pengguna">
-                        <i class="fas fa-plus"> Tambah Pegawai</i>
+                    <a class="btn btn-success" href="#" role="button" title="Tambah Majalah">
+                        <i class="fas fa-plus"> Tambah Majalah</i>
                     </a>
 
                     <a class="btn btn-primary" href="#" role="button" title="Catak Data">
@@ -70,11 +70,10 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>NIP</th>
-                                <th>Nama</th>
-                                <th>Golongan/Posisi</th>
-                                <th>Jenis Kelamin</th>
-                                <th>OAP/Non OAP</th>
+                                <th>Judul</th>
+                                <th>Deskripsi</th>
+                                <th>Nama Instansi/Penulis</th>
+                                <th>File</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -83,11 +82,10 @@
                             <!-- foreach -->
                             <tr>
                                 <td>@php echo $i+1; @endphp</td>
-                                <td>12345</td>
-                                <td>Nino</td>
-                                <td>Eslon II</td>
-                                <td>Laki-laki</td>
-                                <td>OAP</td>
+                                <td>Judul</td>
+                                <td>Deskripsi</td>
+                                <td>Litbang</td>
+                                <td>file</td>
                                 <td class="text-center">
                                     <a class="btn btn-warning mb-1" href="#" role="button" title="Edit">
                                         <i class="fas fa-edit"></i>
@@ -104,11 +102,10 @@
                         <tfoot>
                             <tr>
                                 <th>No</th>
-                                <th>NIP</th>
-                                <th>Nama</th>
-                                <th>Golongan/Posisi</th>
-                                <th>Jenis Kelamin</th>
-                                <th>OAP/Non OAP</th>
+                                <th>Judul</th>
+                                <th>Deskripsi</th>
+                                <th>Nama Instansi/Penulis</th>
+                                <th>File</th>
                                 <th>Aksi</th>
                             </tr>
                         </tfoot>
@@ -131,7 +128,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModal">Hapus Pegawai</h4>
+                <h4 class="modal-title text-center" id="myModal">Hapus Majalah</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         data-feather="x"><span>&times;</span></button>
             </div>

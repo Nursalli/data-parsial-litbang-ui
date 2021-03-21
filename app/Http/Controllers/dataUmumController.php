@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class adminOPDController extends Controller
+class dataUmumController extends Controller
 {
     public function index(){
         $page = 'dashboard';
