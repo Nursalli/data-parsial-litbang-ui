@@ -56,9 +56,11 @@
                     </div>
                     @endif
 
+                    @if($pageAdmin == 'Admin OPD')
                     <a class="btn btn-warning" href="#" role="button" title="Ubah Data Kantor">
                         <i class="fas fa-edit"> Ubah Data Kantor</i>
                     </a>
+                    @endif
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">

@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\dataUmumController;
 use App\Http\Controllers\dataKhususController;
+use App\Http\Controllers\dataUmumAdminUtamaController;
+use App\Http\Controllers\dataKhususAdminUtamaController;
+use App\Http\Controllers\manajemenUserOpdController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,4 +45,23 @@ Route::prefix('admin/data-khusus')->group(function () {
     Route::get('/majalah', [dataKhususController::class, 'majalah']);
     Route::get('/jurnal', [dataKhususController::class, 'jurnal']);
     Route::get('/mou', [dataKhususController::class, 'mou']);
+});
+
+//data-umum admin utama
+Route::prefix('admin/data-umum-admin-utama')->group(function () {
+    Route::get('/', [dataUmumAdminUtamaController::class, 'index']);
+    Route::get('/grafik', [dataUmumAdminUtamaController::class, 'grafik']);
+    Route::get('/tabel', [dataUmumAdminUtamaController::class, 'tabel']);
+});
+
+//data-khusus admin utama
+Route::prefix('admin/data-khusus-admin-utama')->group(function () {
+    Route::get('/', [dataKhususAdminUtamaController::class, 'index']);
+    Route::get('/grafik', [dataKhususAdminUtamaController::class, 'grafik']);
+    Route::get('/tabel', [dataKhususAdminUtamaController::class, 'tabel']);
+});
+
+//data-khusus admin utama
+Route::prefix('admin/manajemen-user-opd')->group(function () {
+    Route::get('/', [manajemenUserOpdController::class, 'index']);
 });

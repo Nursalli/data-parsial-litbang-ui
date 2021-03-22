@@ -2,14 +2,15 @@ Data Umum:
 
 Users:
 - id
+- nip
 - nama
 - email
 - noTelepon
 - foto
 - username
 - password
-- role (Admin OPD, Kepala OPD)
-- domisili
+- role (Admin OPD, Admin Kepala OPD, Admin Super, Admin Utama)
+- lingkup (Provinsi, Kabupaten dll)
 - akses (aktif, non aktif)
 - created_at
 - update_at
@@ -21,6 +22,7 @@ pegawai:
 - golonganPosisi
 - jenisKelamin
 - OAPNonOAP
+- idOPD
 - created_at
 - update_at
 
@@ -36,6 +38,7 @@ kantor:
 - facebook
 - instagram
 - twitter
+- idOPD
 - created_at
 - update_at
 
@@ -45,12 +48,13 @@ websiteAplikasi:
 - namaSistem
 - situs
 - deskripsi
+- idOPD
 - created_at
 - update_at
 
 Data Khusus:
 
-buku:
+bukuLitbang:
 - id
 - judul
 - penerbit
@@ -61,7 +65,7 @@ buku:
 - created_at
 - update_at
 
-penelitian:
+penelitianLitbang:
 - id
 - judul
 - deskripsi
@@ -70,7 +74,7 @@ penelitian:
 - created_at
 - update_at
 
-majalah:
+majalahLitbang:
 - id
 - judul
 - deskripsi
@@ -79,7 +83,7 @@ majalah:
 - created_at
 - update_at
 
-jurnal:
+jurnalLitbang:
 - id
 - judul
 - deskripsi

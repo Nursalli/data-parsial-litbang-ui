@@ -6,12 +6,12 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Data Pegawai</h1>
+                <h1>Data Pengguna</h1>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="/admin/dashboard">Home</a></li>
-                    <li class="breadcrumb-item active">Data Pegawai</li>
+                    <li class="breadcrumb-item active">Data Pengguna</li>
                 </ol>
             </div>
         </div>
@@ -56,14 +56,17 @@
                     </div>
                     @endif
 
-                    @if($pageAdmin == 'Admin OPD')
                     <a class="btn btn-success" href="#" role="button" title="Tambah Pengguna">
-                        <i class="fas fa-plus"> Tambah Pegawai</i>
+                        <i class="fas fa-plus"> Tambah Pengguna</i>
                     </a>
-                    @endif
 
                     <a class="btn btn-primary" href="#" role="button" title="Catak Data">
                         <i class="fas fa-print"></i>
+                    </a>
+
+                    <a class="btn btn-dark kunci-semua" href="#" role="button" title="Hak Akses" data-toggle="modal"
+                        data-id="1" data-target="#formModalHapus">
+                        <i class="fas fa-lock"> Kunci Semua</i>
                     </a>
                 </div>
                 <!-- /.card-header -->
@@ -72,14 +75,15 @@
                         <thead>
                             <tr>
                                 <th>No</th>
+                                <th>Foto</th>
                                 <th>NIP</th>
                                 <th>Nama</th>
-                                <th>Golongan/Posisi</th>
-                                <th>Jenis Kelamin</th>
-                                <th>OAP/Non OAP</th>
-                                @if($pageAdmin == 'Admin OPD')
+                                <th>Email</th>
+                                <th>No Telepon</th>
+                                <th>Role</th>
+                                <th>Lingkup</th>
+                                <th>Status Akun</th>
                                 <th>Aksi</th>
-                                @endif
                             </tr>
                         </thead>
                         <tbody>
@@ -87,13 +91,19 @@
                             <!-- foreach -->
                             <tr>
                                 <td>@php echo $i+1; @endphp</td>
+                                <td>Image</td>
                                 <td>12345</td>
                                 <td>Nino</td>
-                                <td>Eslon II</td>
-                                <td>Laki-laki</td>
-                                <td>OAP</td>
-                                @if($pageAdmin == 'Admin OPD')
+                                <td>nino@gmail.com</td>
+                                <td>08123</td>
+                                <td>Admin Super</td>
+                                <td>Provinsi</td>
+                                <th>Aktif</th>
                                 <td class="text-center">
+                                    <a class="btn btn-info mb-1 kunci" href="#" role="button" title="Hak Akses"
+                                        data-toggle="modal" data-id="1" data-target="#formModalHapus">
+                                        <i class="fas fa-lock"></i>
+                                    </a>
                                     <a class="btn btn-warning mb-1" href="#" role="button" title="Edit">
                                         <i class="fas fa-edit"></i>
                                     </a>
@@ -102,7 +112,6 @@
                                         <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
-                                @endif
                             </tr>
                             @php $i++; @endphp
                             <!-- endforeach -->
@@ -110,14 +119,15 @@
                         <tfoot>
                             <tr>
                                 <th>No</th>
+                                <th>Foto</th>
                                 <th>NIP</th>
                                 <th>Nama</th>
-                                <th>Golongan/Posisi</th>
-                                <th>Jenis Kelamin</th>
-                                <th>OAP/Non OAP</th>
-                                @if($pageAdmin == 'Admin OPD')
+                                <th>Email</th>
+                                <th>No Telepon</th>
+                                <th>Role</th>
+                                <th>Lingkup</th>
+                                <th>Status Akun</th>
                                 <th>Aksi</th>
-                                @endif
                             </tr>
                         </tfoot>
                     </table>
@@ -132,7 +142,6 @@
 </section>
 <!-- /.content -->
 
-@if($pageAdmin == 'Admin OPD')
 <!-- The Modal -->
 <div class="modal modal-danger fade" id="formModalHapus" role="dialog" aria-labelledby="myModal">
     <div class="modal-dialog">
@@ -140,7 +149,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title text-center" id="judulModal">Hapus Pegawai</h4>
+                <h4 class="modal-title text-center" id="judulModal">Hapus Pengguna</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         data-feather="x"><span>&times;</span></button>
             </div>
@@ -148,6 +157,15 @@
             <div class="modal-body">
                 <form action="#" method="post">
                     {{ csrf_field() }}
+                    <div class="form-group" id="jenis">
+                        <label>Pilih Jenis Pengguna</label>
+                        <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Semua Pengguna</option>
+                            <option>Admin Utama</option>
+                            <option>Kepala Admin OPD</option>
+                            <option>Admin OPD</option>
+                        </select>
+                    </div>
                     <p class="text-center">
                         Apakah Anda Yakin ?
                     </p>
@@ -163,5 +181,23 @@
     </div>
 </div>
 </form>
-@endif
+@endsection
+
+@section('addScript')
+<script>
+    $(function () {
+        $(document).on('click', '.kunci', function () {
+            var id = $(this).data('id');
+            $('.modal-body form').prop('action', '/' + id);
+            $('#judulModal').html('Kunci Akun Pengguna');
+            $('#jenis').hide();
+        });
+        $(document).on('click', '.kunci-semua', function () {
+            var id = $(this).data('id');
+            $('.modal-body form').prop('action', '/' + id);
+            $('#judulModal').html('Kunci Semua Akun Pengguna');
+            $('#jenis').show();
+        });
+    });
+</script>
 @endsection

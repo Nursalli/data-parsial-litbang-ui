@@ -92,7 +92,7 @@
         </div>
         <div class="info">
           <a href="#" class="d-block mb-2">Jhonal Las Vegas</a>
-          <h6 class="mb-0 text-light">Admin OPD (Litbang)</h6>
+          <h6 class="mb-0 text-light">{{ $pageAdmin }} <br>(Litbang)</h6>
         </div>
       </div>
 
@@ -109,6 +109,7 @@
               </p>
             </a>
           </li>
+          @if($pageAdmin == 'Admin OPD' || $pageAdmin == 'Admin Ketua OPD')
           <li class="nav-item has-treeview @php if($page == 'pegawai' || $page == 'kantor' || $page == 'webaplikasi') {echo 'menu-open';} @endphp">
             <a href="#" class="nav-link @php if($page == 'pegawai' || $page == 'kantor' || $page == 'webaplikasi') {echo 'active';} @endphp">
               <i class="nav-icon fas fa-database"></i>
@@ -179,6 +180,36 @@
               </li>
             </ul>
           </li>
+          @endif
+
+          @if($pageAdmin == 'Admin Utama' || $pageAdmin == 'Super Admin')
+          <li class="nav-item">
+            <a href="/admin/data-umum-admin-utama" class="nav-link @php if($page == 'data-umum') {echo 'active';} @endphp">
+              <i class="nav-icon fas fa-database"></i>
+              <p>
+                Data Umum OPD
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/admin/data-khusus-admin-utama" class="nav-link @php if($page == 'data-khusus') {echo 'active';} @endphp">
+              <i class="nav-icon fas fa-database"></i>
+              <p>
+                Data Khusus OPD
+              </p>
+            </a>
+          </li>
+          @if($pageAdmin == 'Super Admin')
+          <li class="nav-item">
+            <a href="/admin/manajemen-user-opd" class="nav-link @php if($page == 'manajemen-user-opd') {echo 'active';} @endphp">
+              <i class="nav-icon fas fa-database"></i>
+              <p>
+                Manajemen User OPD
+              </p>
+            </a>
+          </li>
+          @endif
+          @endif
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -236,6 +267,10 @@
 <script>
   $(function () {
     $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $(".example1").DataTable({
       "responsive": true,
       "autoWidth": false,
     });

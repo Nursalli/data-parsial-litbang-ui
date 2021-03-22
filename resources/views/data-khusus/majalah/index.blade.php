@@ -56,9 +56,11 @@
                     </div>
                     @endif
 
+                    @if($pageAdmin == 'Admin OPD')
                     <a class="btn btn-success" href="#" role="button" title="Tambah Majalah">
                         <i class="fas fa-plus"> Tambah Majalah</i>
                     </a>
+                    @endif
 
                     <a class="btn btn-primary" href="#" role="button" title="Catak Data">
                         <i class="fas fa-print"></i>
@@ -74,7 +76,9 @@
                                 <th>Deskripsi</th>
                                 <th>Nama Instansi/Penulis</th>
                                 <th>File</th>
+                                @if($pageAdmin == 'Admin OPD')
                                 <th>Aksi</th>
+                                @endif
                             </tr>
                         </thead>
                         <tbody>
@@ -86,6 +90,7 @@
                                 <td>Deskripsi</td>
                                 <td>Litbang</td>
                                 <td>file</td>
+                                @if($pageAdmin == 'Admin OPD')
                                 <td class="text-center">
                                     <a class="btn btn-warning mb-1" href="#" role="button" title="Edit">
                                         <i class="fas fa-edit"></i>
@@ -95,6 +100,7 @@
                                         <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
+                                @endif
                             </tr>
                             @php $i++; @endphp
                             <!-- endforeach -->
@@ -106,7 +112,9 @@
                                 <th>Deskripsi</th>
                                 <th>Nama Instansi/Penulis</th>
                                 <th>File</th>
+                                @if($pageAdmin == 'Admin OPD')
                                 <th>Aksi</th>
+                                @endif
                             </tr>
                         </tfoot>
                     </table>
@@ -121,6 +129,7 @@
 </section>
 <!-- /.content -->
 
+@if($pageAdmin == 'Admin OPD')
 <!-- The Modal -->
 <div class="modal modal-danger fade" id="formModalHapus" role="dialog" aria-labelledby="myModal">
     <div class="modal-dialog">
@@ -128,7 +137,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModal">Hapus Majalah</h4>
+                <h4 class="modal-title text-center" id="judulModal">Hapus Majalah</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         data-feather="x"><span>&times;</span></button>
             </div>
@@ -151,4 +160,5 @@
     </div>
 </div>
 </form>
+@endif
 @endsection
