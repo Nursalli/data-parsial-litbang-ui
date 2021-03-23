@@ -57,7 +57,7 @@
                     @endif
 
                     @if($pageAdmin == 'Admin OPD')
-                    <a class="btn btn-success" href="#" role="button" title="Tambah Penelitian">
+                    <a class="btn btn-success" href="/admin/data-khusus/penelitian/tambah" role="button" title="Tambah Penelitian">
                         <i class="fas fa-plus"> Tambah Penelitian</i>
                     </a>
                     @endif
@@ -92,7 +92,7 @@
                                 <td>file</td>
                                 @if($pageAdmin == 'Admin OPD')
                                 <td class="text-center">
-                                    <a class="btn btn-warning mb-1" href="#" role="button" title="Edit">
+                                    <a class="btn btn-warning mb-1" href="/admin/data-khusus/penelitian/ubah" role="button" title="Edit">
                                         <i class="fas fa-edit"></i>
                                     </a>
                                     <a class="btn btn-danger mb-1 hapusUser" href="#" role="button" title="Hapus"

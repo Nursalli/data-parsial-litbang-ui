@@ -2,12 +2,12 @@ Data Umum:
 
 Users:
 - id
-- nip
+- nip -> unique
 - nama
 - email
 - noTelepon
 - foto
-- username
+- username -> unique
 - password
 - role (Admin OPD, Admin Kepala OPD, Admin Super, Admin Utama)
 - lingkup (Provinsi, Kabupaten dll)

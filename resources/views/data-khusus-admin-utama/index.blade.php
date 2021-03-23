@@ -41,6 +41,7 @@
                                         <option>Washington</option>
                                     </select>
                                 </div>
+                                <button type="submit" class="btn btn-success">Submit</button>
                             </div>
                         </div>
                     </form>

@@ -57,7 +57,7 @@
                     @endif
 
                     @if($pageAdmin == 'Admin OPD')
-                    <a class="btn btn-warning" href="#" role="button" title="Ubah Data Kantor">
+                    <a class="btn btn-warning" href="/admin/data-umum/kantor/ubah" role="button" title="Ubah Data Kantor">
                         <i class="fas fa-edit"> Ubah Data Kantor</i>
                     </a>
                     @endif

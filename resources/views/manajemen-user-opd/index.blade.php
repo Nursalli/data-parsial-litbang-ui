@@ -56,7 +56,7 @@
                     </div>
                     @endif
 
-                    <a class="btn btn-success" href="#" role="button" title="Tambah Pengguna">
+                    <a class="btn btn-success" href="/admin/manajemen-user-opd/tambah" role="button" title="Tambah Pengguna">
                         <i class="fas fa-plus"> Tambah Pengguna</i>
                     </a>
 
@@ -82,6 +82,7 @@
                                 <th>No Telepon</th>
                                 <th>Role</th>
                                 <th>Lingkup</th>
+                                <th>Username</th>
                                 <th>Status Akun</th>
                                 <th>Aksi</th>
                             </tr>
@@ -98,13 +99,14 @@
                                 <td>08123</td>
                                 <td>Admin Super</td>
                                 <td>Provinsi</td>
+                                <td>omjhonal</td>
                                 <th>Aktif</th>
                                 <td class="text-center">
                                     <a class="btn btn-info mb-1 kunci" href="#" role="button" title="Hak Akses"
                                         data-toggle="modal" data-id="1" data-target="#formModalHapus">
                                         <i class="fas fa-lock"></i>
                                     </a>
-                                    <a class="btn btn-warning mb-1" href="#" role="button" title="Edit">
+                                    <a class="btn btn-warning mb-1" href="/admin/manajemen-user-opd/ubah" role="button" title="Edit">
                                         <i class="fas fa-edit"></i>
                                     </a>
                                     <a class="btn btn-danger mb-1 hapusUser" href="#" role="button" title="Hapus"
@@ -126,6 +128,7 @@
                                 <th>No Telepon</th>
                                 <th>Role</th>
                                 <th>Lingkup</th>
+                                <th>Username</th>
                                 <th>Status Akun</th>
                                 <th>Aksi</th>
                             </tr>

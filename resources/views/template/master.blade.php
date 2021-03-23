@@ -91,7 +91,7 @@
           <img src="{!! asset('admin-lte/dist/img/user2-160x160.jpg') !!}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block mb-2">Jhonal Las Vegas</a>
+          <a href="/admin/profil" class="d-block mb-2">Jhonal Las Vegas</a>
           <h6 class="mb-0 text-light">{{ $pageAdmin }} <br>(Litbang)</h6>
         </div>
       </div>
