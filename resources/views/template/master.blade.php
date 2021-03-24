@@ -80,7 +80,8 @@
            alt="admin-lte Logo"
            class="brand-image img-square elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Litbang</span>
+      <span class="brand-text font-weight-light">@if (Auth::user()->namaOPD == '-') Provinsi
+      @else {{ Auth::user()->namaOPD }} @endif</span>
     </a>
 
     <!-- Sidebar -->
@@ -91,8 +92,9 @@
           <img src="{!! asset('admin-lte/dist/img/user2-160x160.jpg') !!}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="/admin/profil" class="d-block mb-2">Jhonal Las Vegas</a>
-          <h6 class="mb-0 text-light">{{ $pageAdmin }} <br>(Litbang)</h6>
+          <a href="/admin/profil" class="d-block mb-2">{{ Auth::user()->nama }}</a>
+          <h6 class="mb-0 text-light">{{ $pageAdmin }} <br>(@if (Auth::user()->namaOPD == '-') Provinsi
+      @else {{ Auth::user()->namaOPD }} @endif)</h6>
         </div>
       </div>
 

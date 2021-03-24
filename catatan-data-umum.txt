@@ -4,13 +4,14 @@ Users:
 - id
 - nip -> unique
 - nama
-- email
+- email -> unique
 - noTelepon
 - foto
 - username -> unique
 - password
-- role (Admin OPD, Admin Kepala OPD, Admin Super, Admin Utama)
+- role (Admin OPD, Admin Kepala OPD, Super Admin, Admin Utama)
 - lingkup (Provinsi, Kabupaten dll)
+- namaOPD
 - akses (aktif, non aktif)
 - created_at
 - update_at

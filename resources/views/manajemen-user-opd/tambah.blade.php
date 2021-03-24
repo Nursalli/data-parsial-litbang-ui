@@ -79,20 +79,20 @@
                                     <label for="password">Password</label>
                                     <input type="password" class="form-control" id="password" placeholder="Masukkan Password">
                                 </div>
-                                <!-- <div class="form-group">
+                                <div class="form-group">
                                     <label>Lingkup</label>
-                                    <select class="form-control" style="width: 100%;">
+                                    <select class="form-control" id="lingkup" style="width: 100%;">
                                         <option selected="selected">Pilih Lingkup</option>
                                         <option value="Provinsi">Provinsi</option>
                                         <option value="Kabupaten">Kabupaten</option>
                                         <option value="Kota">Kota</option>
                                     </select>
                                 </div>
-                                <div class="form-group" id="kab_kota">
+                                <div class="form-group" id="kab_kota" style="display: none;">
                                     <label for="nama_kab_kota">Nama Kabupaten/Kota</label>
                                     <input type="text" class="form-control" id="nama_kab_kota"
                                         placeholder="Masukkan Nama Kabupaten/Kota">
-                                </div> -->
+                                </div>
                                 <div class="form-group">
                                     <label>Status Akun</label>
                                     <select class="form-control" style="width: 100%;">
@@ -111,4 +111,12 @@
             </div>
         </div>
 </section>
+@endsection
+
+@section('addScript')
+<script>
+    $(function () {
+        // $('#kab_kota').hide();
+    });
+</script>
 @endsection

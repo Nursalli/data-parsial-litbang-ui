@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
 //Admin OPD Provinsi dan Admin Ketua OPD Provinsi
 class dataKhususController extends Controller
 {
     public function buku(){
         $page = 'buku';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.buku.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -17,7 +17,7 @@ class dataKhususController extends Controller
 
     public function tambahBuku(){
         $page = 'buku';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.buku.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -25,7 +25,7 @@ class dataKhususController extends Controller
 
     public function ubahBuku(){
         $page = 'buku';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.buku.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -33,7 +33,7 @@ class dataKhususController extends Controller
 
     public function penelitian(){
         $page = 'penelitian';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.penelitian.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -41,7 +41,7 @@ class dataKhususController extends Controller
 
     public function tambahPenelitian(){
         $page = 'penelitian';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.penelitian.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -49,7 +49,7 @@ class dataKhususController extends Controller
 
     public function ubahPenelitian(){
         $page = 'penelitian';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.penelitian.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -57,7 +57,7 @@ class dataKhususController extends Controller
 
     public function majalah(){
         $page = 'majalah';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.majalah.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -65,7 +65,7 @@ class dataKhususController extends Controller
 
     public function tambahMajalah(){
         $page = 'majalah';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.majalah.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -73,7 +73,7 @@ class dataKhususController extends Controller
 
     public function ubahMajalah(){
         $page = 'majalah';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.majalah.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -81,7 +81,7 @@ class dataKhususController extends Controller
 
     public function jurnal(){
         $page = 'jurnal';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.jurnal.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -89,7 +89,7 @@ class dataKhususController extends Controller
 
     public function tambahJurnal(){
         $page = 'jurnal';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.jurnal.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -97,7 +97,7 @@ class dataKhususController extends Controller
 
     public function ubahJurnal(){
         $page = 'jurnal';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.jurnal.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -105,7 +105,7 @@ class dataKhususController extends Controller
 
     public function mou(){
         $page = 'mou';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.mou.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -113,7 +113,7 @@ class dataKhususController extends Controller
 
     public function tambahMou(){
         $page = 'mou';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.mou.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
@@ -121,7 +121,7 @@ class dataKhususController extends Controller
 
     public function ubahMou(){
         $page = 'mou';
-        $pageAdmin = 'Admin OPD';
+        $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
         return view('data-khusus.mou.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);

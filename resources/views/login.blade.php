@@ -29,7 +29,7 @@
                         <img src="{!! asset('img/logo.png') !!}" alt="logo" width="80"
                             class="mb-5 mt-2">
                         <h4 class="text-dark font-weight-normal">Selamat Datang di <span class="font-weight-bold">Data
-                                Parsial Litbang</span></h4>
+                                Parsial Provinsi Papua Barat</span></h4>
                         <p class="text-muted">Sebelum anda login, pastikan anda telah memiliki akun.</p>
                         <form method="post" action="/admin/login" class="needs-validation" novalidate="">
                             {{ csrf_field() }}
