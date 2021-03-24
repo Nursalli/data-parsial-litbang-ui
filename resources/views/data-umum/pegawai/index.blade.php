@@ -85,6 +85,7 @@
                         <tbody>
                             @php $i = 0; @endphp
                             <!-- foreach -->
+                            @php while ($i < 5) { @endphp
                             <tr>
                                 <td>@php echo $i+1; @endphp</td>
                                 <td>12345</td>
@@ -104,7 +105,7 @@
                                 </td>
                                 @endif
                             </tr>
-                            @php $i++; @endphp
+                            @php $i++; } @endphp
                             <!-- endforeach -->
                         </tbody>
                         <tfoot>

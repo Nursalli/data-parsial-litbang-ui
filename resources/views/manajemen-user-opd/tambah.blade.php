@@ -116,7 +116,9 @@
 @section('addScript')
 <script>
     $(function () {
-        // $('#kab_kota').hide();
+        $(document).on('change', '#lingkup', function () {
+            $('#kab_kota').show();
+        });
     });
 </script>
 @endsection

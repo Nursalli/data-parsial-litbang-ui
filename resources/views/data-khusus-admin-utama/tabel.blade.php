@@ -44,6 +44,7 @@
                         <tbody>
                             @php $i = 0; @endphp
                             <!-- foreach -->
+                            @php while ($i < 5) { @endphp
                             <tr>
                                 <td>@php echo $i+1; @endphp</td>
                                 <td>Judul</td>
@@ -53,7 +54,7 @@
                                 <td>2009</td>
                                 <td>file</td>
                             </tr>
-                            @php $i++; @endphp
+                            @php $i++; } @endphp
                             <!-- endforeach -->
                         </tbody>
                         <tfoot>
@@ -83,6 +84,7 @@
                         <tbody>
                             @php $i = 0; @endphp
                             <!-- foreach -->
+                            @php while ($i < 5) { @endphp
                             <tr>
                                 <td>@php echo $i+1; @endphp</td>
                                 <td>Judul</td>
@@ -90,7 +92,7 @@
                                 <td>Litbang</td>
                                 <td>file</td>
                             </tr>
-                            @php $i++; @endphp
+                            @php $i++; } @endphp
                             <!-- endforeach -->
                         </tbody>
                         <tfoot>
@@ -118,6 +120,7 @@
                         <tbody>
                             @php $i = 0; @endphp
                             <!-- foreach -->
+                            @php while ($i < 5) { @endphp
                             <tr>
                                 <td>@php echo $i+1; @endphp</td>
                                 <td>Judul</td>
@@ -125,7 +128,7 @@
                                 <td>Litbang</td>
                                 <td>file</td>
                             </tr>
-                            @php $i++; @endphp
+                            @php $i++; } @endphp
                             <!-- endforeach -->
                         </tbody>
                         <tfoot>
@@ -153,6 +156,7 @@
                         <tbody>
                             @php $i = 0; @endphp
                             <!-- foreach -->
+                            @php while ($i < 5) { @endphp
                             <tr>
                                 <td>@php echo $i+1; @endphp</td>
                                 <td>Judul</td>
@@ -160,7 +164,7 @@
                                 <td>Litbang</td>
                                 <td>file</td>
                             </tr>
-                            @php $i++; @endphp
+                            @php $i++; } @endphp
                             <!-- endforeach -->
                         </tbody>
                         <tfoot>
@@ -188,6 +192,7 @@
                         <tbody>
                             @php $i = 0; @endphp
                             <!-- foreach -->
+                            @php while ($i < 5) { @endphp
                             <tr>
                                 <td>@php echo $i+1; @endphp</td>
                                 <td>Judul</td>
@@ -195,7 +200,7 @@
                                 <td>Litbang</td>
                                 <td>file</td>
                             </tr>
-                            @php $i++; @endphp
+                            @php $i++; } @endphp
                             <!-- endforeach -->
                         </tbody>
                         <tfoot>
