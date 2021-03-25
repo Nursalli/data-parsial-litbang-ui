@@ -45,7 +45,7 @@ Route::prefix('admin/data-umum')->group(function () {
     Route::get('/webaplikasi/ubah', [dataUmumController::class, 'ubahWebaplikasi'])->middleware('auth');
 });
 
-//data-khusus
+//data-khusus litbang
 Route::prefix('admin/data-khusus')->group(function () {
     Route::get('/buku', [dataKhususController::class, 'buku'])->middleware('auth');
     Route::get('/buku/tambah', [dataKhususController::class, 'tambahBuku'])->middleware('auth');
@@ -62,6 +62,19 @@ Route::prefix('admin/data-khusus')->group(function () {
     Route::get('/mou', [dataKhususController::class, 'mou'])->middleware('auth');
     Route::get('/mou/tambah', [dataKhususController::class, 'tambahMou'])->middleware('auth');
     Route::get('/mou/ubah', [dataKhususController::class, 'ubahMou'])->middleware('auth');
+});
+
+//data-khusus kominfo
+Route::prefix('admin/data-khusus')->group(function () {
+    Route::get('/perangkat-keras', [dataKhususController::class, 'perangkatKeras'])->middleware('auth');
+    Route::get('/perangkat-keras/tambah', [dataKhususController::class, 'tambahPerangkatKeras'])->middleware('auth');
+    Route::get('/perangkat-keras/ubah', [dataKhususController::class, 'ubahPerangkatKeras'])->middleware('auth');
+    Route::get('/perangkat-lunak', [dataKhususController::class, 'perangkatLunak'])->middleware('auth');
+    Route::get('/perangkat-lunak/tambah', [dataKhususController::class, 'tambahPerangkatLunak'])->middleware('auth');
+    Route::get('/perangkat-lunak/ubah', [dataKhususController::class, 'ubahPerangkatLunak'])->middleware('auth');
+    Route::get('/aplikasi', [dataKhususController::class, 'aplikasi'])->middleware('auth');
+    Route::get('/aplikasi/tambah', [dataKhususController::class, 'tambahAplikasi'])->middleware('auth');
+    Route::get('/aplikasi/ubah', [dataKhususController::class, 'ubahAplikasi'])->middleware('auth');
 });
 
 //data-umum admin utama

@@ -42,14 +42,15 @@
                                         <div class="card-body pt-0">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="lead"><b>Litbang</b></h2>
+                                                    <h2 class="lead"><b>@if (Auth::user()->namaOPD == '-') Provinsi
+                                                            @else {{ Auth::user()->namaOPD }} @endif</b></h2>
                                                     <ul class="ml-4 mb-0 fa-ul text-light">
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-building"></i></span> Alamat:
                                                             Demo Street 123, Demo City 04312, NJ</li>
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-envelope"></i></span> Email:
-                                                            libang@gmail.com</li>
+                                                            opd@gmail.com</li>
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-phone"></i></span> No. Telp: +
                                                             800 - 12 12 23 52</li>
@@ -93,7 +94,8 @@
                                         <div class="card-body pt-0">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="lead"><b>Litbang</b></h2>
+                                                    <h2 class="lead"><b>@if (Auth::user()->namaOPD == '-') Provinsi
+                                                            @else {{ Auth::user()->namaOPD }} @endif</b></h2>
                                                     <ul class="ml-4 mb-0 fa-ul text-light">
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-globe"></i></span><a href="#"
@@ -135,11 +137,13 @@
                                         <div class="card-body pt-0">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="lead"><b>Litbang</b></h2>
+                                                    <h2 class="lead"><b>@if (Auth::user()->namaOPD == '-') Provinsi
+                                                            @else {{ Auth::user()->namaOPD }} @endif</b></h2>
                                                     <ul class="ml-4 mb-0 fa-ul text-light">
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-globe"></i></span><a href="#"
-                                                                target="_blank" class="text-white"> Aplikasi OPD</li></a>
+                                                                target="_blank" class="text-white"> Aplikasi OPD</li>
+                                                        </a>
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-globe"></i></span><a href="#"
                                                                 target="_blank" class="text-white"> Aplikasi E-Learning
@@ -231,7 +235,8 @@
                             <!-- DONUT CHART -->
                             <div class="card card-warning">
                                 <div class="card-header">
-                                    <h3 class="card-title">Produk Litbang</h3>
+                                    <h3 class="card-title">@if (Auth::user()->namaOPD == 'Litbang') Produk Litbang
+                                        @else Data Kominfo @endif</h3>
 
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
@@ -282,8 +287,8 @@
                             <!-- /.card -->
                         </div>
                         <div class="col-md-6">
-                        <!-- PIE CHART -->
-                        <div class="card card-danger">
+                            <!-- PIE CHART -->
+                            <div class="card card-danger">
                                 <div class="card-header">
                                     <h3 class="card-title">Statistik Jabatan</h3>
 
@@ -399,6 +404,7 @@
             options: barChartOptions
         })
 
+        @if (Auth::user()->namaOPD == 'Litbang')
         //-------------
         //- DONUT CHART -
         //-------------
@@ -428,6 +434,36 @@
             data: donutData,
             options: donutOptions
         })
+
+        @else
+        //-------------
+        //- DONUT CHART -
+        //-------------
+        // Get context with jQuery - using jQuery's .get() method.
+        var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+        var donutData = {
+            labels: [
+                'Perangkat Keras',
+                'Perangkat Lunak',
+                'Aplikasi',
+            ],
+            datasets: [{
+                data: [700, 500, 400],
+                backgroundColor: ['#f56954', '#00a65a', '#f39c12'],
+            }]
+        }
+        var donutOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+        }
+        //Create pie or douhnut chart
+        // You can switch between pie and douhnut using the method below.
+        var donutChart = new Chart(donutChartCanvas, {
+            type: 'doughnut',
+            data: donutData,
+            options: donutOptions
+        })
+        @endif
 
         //--------------
         //- AREA CHART -

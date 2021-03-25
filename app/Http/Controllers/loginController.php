@@ -72,6 +72,40 @@ class loginController extends Controller
 
         // $user->save();
 
+        //kominfo
+
+        // $user = new User;
+
+        // $user->nip = '112';
+        // $user->nama = 'kaleb';
+        // $user->email = 'kaleb@gmail.com';
+        // $user->noTelepon = '112';
+        // $user->foto = '112';
+        // $user->username = 'adminopd1';
+        // $user->password = bcrypt('1234');
+        // $user->role = 'Admin OPD';
+        // $user->lingkup = 'Provinsi';
+        // $user->namaOPD = 'Kominfo';
+        // $user->akses = 'Aktif';
+
+        // $user->save();
+
+        // $user = new User;
+
+        // $user->nip = '113';
+        // $user->nama = 'kaleb';
+        // $user->email = 'kaleb2@gmail.com';
+        // $user->noTelepon = '113';
+        // $user->foto = '113';
+        // $user->username = 'adminketuaopd1';
+        // $user->password = bcrypt('1234');
+        // $user->role = 'Admin Ketua OPD';
+        // $user->lingkup = 'Provinsi';
+        // $user->namaOPD = 'Kominfo';
+        // $user->akses = 'Aktif';
+
+        // $user->save();
+
         return view('login');
     }
 

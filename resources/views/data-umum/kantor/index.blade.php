@@ -81,7 +81,7 @@
                             <tr>
                                 <td>2</td>
                                 <td>Nama OPD</td>
-                                <td>Litbang</td>
+                                <td>Nama OPD</td>
                             </tr>
                             <tr>
                                 <td>3</td>

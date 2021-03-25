@@ -42,14 +42,14 @@
                                         <div class="card-body pt-0">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="lead"><b>Litbang</b></h2>
+                                                    <h2 class="lead"><b>OPD</b></h2>
                                                     <ul class="ml-4 mb-0 fa-ul text-light">
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-building"></i></span> Alamat:
                                                             Demo Street 123, Demo City 04312, NJ</li>
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-envelope"></i></span> Email:
-                                                            libang@gmail.com</li>
+                                                            opd@gmail.com</li>
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-phone"></i></span> No. Telp: +
                                                             800 - 12 12 23 52</li>
@@ -90,7 +90,7 @@
                                         <div class="card-body pt-0">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="lead"><b>Litbang</b></h2>
+                                                    <h2 class="lead"><b>OPD</b></h2>
                                                     <ul class="ml-4 mb-0 fa-ul text-light">
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-globe"></i></span><a href="#"
@@ -125,7 +125,7 @@
                                         <div class="card-body pt-0">
                                             <div class="row">
                                                 <div class="col-7">
-                                                    <h2 class="lead"><b>Litbang</b></h2>
+                                                    <h2 class="lead"><b>OPD</b></h2>
                                                     <ul class="ml-4 mb-0 fa-ul text-light">
                                                         <li class="small mb-1"><span class="fa-li"><i
                                                                     class="fas fa-lg fa-globe"></i></span><a href="#"

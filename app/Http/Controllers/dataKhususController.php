@@ -7,12 +7,13 @@ use Illuminate\Support\Facades\Auth;
 //Admin OPD Provinsi dan Admin Ketua OPD Provinsi
 class dataKhususController extends Controller
 {
+    //litbang
     public function buku(){
         $page = 'buku';
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.buku.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.buku.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function tambahBuku(){
@@ -20,7 +21,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.buku.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.buku.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function ubahBuku(){
@@ -28,7 +29,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.buku.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.buku.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function penelitian(){
@@ -36,7 +37,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.penelitian.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.penelitian.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function tambahPenelitian(){
@@ -44,7 +45,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.penelitian.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.penelitian.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function ubahPenelitian(){
@@ -52,7 +53,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.penelitian.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.penelitian.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function majalah(){
@@ -60,7 +61,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.majalah.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.majalah.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function tambahMajalah(){
@@ -68,7 +69,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.majalah.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.majalah.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function ubahMajalah(){
@@ -76,7 +77,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.majalah.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.majalah.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function jurnal(){
@@ -84,7 +85,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.jurnal.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.jurnal.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function tambahJurnal(){
@@ -92,7 +93,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.jurnal.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.jurnal.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function ubahJurnal(){
@@ -100,7 +101,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.jurnal.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.jurnal.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function mou(){
@@ -108,7 +109,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.mou.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.mou.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function tambahMou(){
@@ -116,7 +117,7 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.mou.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.mou.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 
     public function ubahMou(){
@@ -124,6 +125,79 @@ class dataKhususController extends Controller
         $pageAdmin = Auth::user()->role;
         // $pageAdmin = 'Admin Ketua OPD';
 
-        return view('data-khusus.mou.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+        return view('data-khusus.litbang.mou.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    //kominfo
+    public function perangkatKeras(){
+        $page = 'perangkat-keras';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.perangkat-keras.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    public function tambahPerangkatKeras(){
+        $page = 'perangkat-keras';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.perangkat-keras.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    public function ubahPerangkatKeras(){
+        $page = 'perangkat-keras';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.perangkat-keras.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    public function perangkatLunak(){
+        $page = 'perangkat-lunak';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.perangkat-lunak.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    public function tambahPerangkatLunak(){
+        $page = 'perangkat-lunak';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.perangkat-lunak.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    public function ubahPerangkatLunak(){
+        $page = 'perangkat-lunak';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.perangkat-lunak.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    public function aplikasi(){
+        $page = 'aplikasi';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.aplikasi.index', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    public function tambahAplikasi(){
+        $page = 'aplikasi';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.aplikasi.tambah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
+    }
+
+    public function ubahAplikasi(){
+        $page = 'aplikasi';
+        $pageAdmin = Auth::user()->role;
+        // $pageAdmin = 'Admin Ketua OPD';
+
+        return view('data-khusus.kominfo.aplikasi.ubah', ['page' => $page, 'pageAdmin' => $pageAdmin]);
     }
 }

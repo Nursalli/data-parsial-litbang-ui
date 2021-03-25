@@ -141,6 +141,7 @@
               </li>
             </ul>
           </li>
+          @if(Auth::user()->namaOPD == 'Litbang')
           <li class="nav-item has-treeview @php if($page == 'buku' || $page == 'penelitian' || $page == 'majalah' || $page == 'jurnal' || $page == 'mou') {echo 'menu-open';} @endphp">
             <a href="#" class="nav-link @php if($page == 'buku' || $page == 'penelitian' || $page == 'majalah' || $page == 'jurnal' || $page == 'mou') {echo 'active';} @endphp">
               <i class="nav-icon fas fa-database"></i>
@@ -182,6 +183,40 @@
               </li>
             </ul>
           </li>
+          @endif
+
+          @if(Auth::user()->namaOPD == 'Kominfo')
+          <li class="nav-item has-treeview @php if($page == 'perangkat-keras' || $page == 'perangkat-lunak' || $page == 'aplikasi') {echo 'menu-open';} @endphp">
+            <a href="#" class="nav-link @php if($page == 'perangkat-keras' || $page == 'perangkat-lunak' || $page == 'aplikasi') {echo 'active';} @endphp">
+              <i class="nav-icon fas fa-database"></i>
+              <p>
+                Data Khusus
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/admin/data-khusus/perangkat-keras" class="nav-link @php if($page == 'perangkat-keras') {echo 'active';} @endphp">
+                  <i class="fas fa-book nav-icon"></i>
+                  <p>Perangkat Keras</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/data-khusus/perangkat-lunak" class="nav-link @php if($page == 'perangkat-lunak') {echo 'active';} @endphp">
+                  <i class="fas fa-file-contract nav-icon"></i>
+                  <p>Perangkat Lunak</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/admin/data-khusus/aplikasi" class="nav-link @php if($page == 'aplikasi') {echo 'active';} @endphp">
+                  <i class="far fa-newspaper nav-icon"></i>
+                  <p>Aplikasi</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          @endif
+
           @endif
 
           @if($pageAdmin == 'Admin Utama' || $pageAdmin == 'Super Admin')
