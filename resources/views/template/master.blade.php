@@ -197,19 +197,19 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/admin/data-khusus/perangkat-keras" class="nav-link @php if($page == 'perangkat-keras') {echo 'active';} @endphp">
-                  <i class="fas fa-book nav-icon"></i>
+                  <i class="fas fa-laptop nav-icon"></i>
                   <p>Perangkat Keras</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/admin/data-khusus/perangkat-lunak" class="nav-link @php if($page == 'perangkat-lunak') {echo 'active';} @endphp">
-                  <i class="fas fa-file-contract nav-icon"></i>
+                  <i class="fas fa-laptop nav-icon"></i>
                   <p>Perangkat Lunak</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/admin/data-khusus/aplikasi" class="nav-link @php if($page == 'aplikasi') {echo 'active';} @endphp">
-                  <i class="far fa-newspaper nav-icon"></i>
+                  <i class="fas fa-globe nav-icon"></i>
                   <p>Aplikasi</p>
                 </a>
               </li>
