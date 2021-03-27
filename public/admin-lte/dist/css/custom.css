@@ -1,0 +1,50 @@
+.btn-default.log-out:hover {
+  background-color: #9a2e2e;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.8s ease 0s;
+  color: white;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.grafik-kiri {
+  border-radius: 0px 40px 0px 40px;
+  box-shadow: 0px 5px 15px -10px rgb(0 0 0 / 57%);
+}
+
+.card-success:not(.card-outline)>.head-grafik-kiri {
+  border-radius: 0px 40px 0px 0px;
+}
+
+.card-success:not(.card-outline)>.head-grafik-kiri:hover {
+  border-radius: 0px 40px 0px 0px;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 10px 6px 44px -10px rgba(0,0,0,0.57);
+  transition: all 0.5s ease 0s;
+  color: white;
+}
+
+.card-danger:not(.card-outline)>.head-grafik-kiri {
+  border-radius: 0px 40px 0px 0px;
+}
+
+.card-danger:not(.card-outline)>.head-grafik-kiri:hover {
+  border-radius: 0px 40px 0px 0px;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 10px 6px 44px -10px rgba(0,0,0,0.57);
+  transition: all 0.5s ease 0s;
+  color: white;
+}
+
+.card-warning:not(.card-outline)>.head-grafik-kiri {
+  border-radius: 0px 40px 0px 0px;
+}
+
+.card-warning:not(.card-outline)>.head-grafik-kiri:hover {
+  border-radius: 0px 40px 0px 0px;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 10px 6px 44px -10px rgba(0,0,0,0.57);
+  transition: all 0.5s ease 0s;
+  color: white;
+}

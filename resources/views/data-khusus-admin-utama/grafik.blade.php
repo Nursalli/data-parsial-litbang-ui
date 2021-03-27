@@ -32,8 +32,8 @@
                         <div class="col-md-6">
                             <h3 class="card-title">Data Khusus:</h3><br><br>
                             <!-- DONUT CHART -->
-                            <div class="card card-warning">
-                                <div class="card-header">
+                            <div class="card card-warning grafik-kiri">
+                                <div class="card-header head-grafik-kiri">
                                     <h3 class="card-title">Produk Litbang</h3>
 
                                     <div class="card-tools">

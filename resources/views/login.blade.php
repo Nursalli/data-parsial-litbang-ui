@@ -65,7 +65,7 @@
                                 <!-- <a href="auth-forgot-password.html" class="float-left mt-3">
                                     Forgot Password?
                                 </a> -->
-                                <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" tabindex="4">
+                                <button type="submit" class="btn btn-login btn-lg btn-icon icon-right" tabindex="4">
                                     Login
                                 </button>
                             </div>

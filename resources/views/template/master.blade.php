@@ -23,13 +23,15 @@
   <link rel="stylesheet" href="{!! asset('admin-lte/dist/css/adminlte.min.css') !!}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{!! asset('admin-lte/dist/css/custom.css') !!}">
 
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark navbar-@php if(Auth::user()->namaOPD == 'Litbang') {echo 'info';} else{echo 'primary';} @endphp">
+  <nav class="main-header navbar navbar-expand navbar-dark navbar-@php if(Auth::user()->namaOPD == 'Litbang') {echo 'info';} elseif(Auth::user()->namaOPD == 'Kominfo') {echo 'primary';} else{echo 'success';} @endphp">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -64,7 +66,7 @@
         </a>
       </li>
       <li> -->
-        <a class="btn btn-default" href="/admin/logout" role="button">
+        <a class="btn btn-default log-out" href="/admin/logout" role="button">
           <i class="fas fa-power-off"></i>
         </a>
       </li>
@@ -73,7 +75,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-@php if(Auth::user()->namaOPD == 'Litbang') {echo 'info';} else{echo 'primary';} @endphp elevation-4">
+  <aside class="main-sidebar sidebar-dark-@php if(Auth::user()->namaOPD == 'Litbang') {echo 'info';} elseif(Auth::user()->namaOPD == 'Kominfo') {echo 'primary';} else{echo 'success';} @endphp elevation-4">
     <!-- Brand Logo -->
     <a href="/admin/dashboard" class="brand-link">
       <img src="{!! asset('img/logo.png') !!}"

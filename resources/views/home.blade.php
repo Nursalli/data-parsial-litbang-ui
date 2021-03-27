@@ -25,7 +25,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Grafik Data Parsial</h3>
+                    <h3 class="card-title">Grafik Data Parsial 2021</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -181,11 +181,11 @@
                     @if($pageAdmin == 'Admin OPD' || $pageAdmin == 'Admin Ketua OPD')
                     <div class="row">
                         <!-- Kiri -->
-                        <div class="col-md-6">
+                        <div class="col-md-6 card-kiri">
                             <h3 class="card-title">Data Umum:</h3><br><br>
                             <!-- BAR CHART -->
-                            <div class="card card-success">
-                                <div class="card-header">
+                            <div class="card card-success grafik-kiri">
+                                <div class="card-header head-grafik-kiri">
                                     <h3 class="card-title">Statistik Pegawai</h3>
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
@@ -208,8 +208,8 @@
                             <!-- /.card -->
 
                             <!-- PIE CHART -->
-                            <div class="card card-danger">
-                                <div class="card-header">
+                            <div class="card card-danger grafik-kiri">
+                                <div class="card-header head-grafik-kiri">
                                     <h3 class="card-title">Statistik Jabatan</h3>
 
                                     <div class="card-tools">
@@ -233,8 +233,8 @@
                         <div class="col-md-6">
                             <h3 class="card-title">Data Khusus:</h3><br><br>
                             <!-- DONUT CHART -->
-                            <div class="card card-warning">
-                                <div class="card-header">
+                            <div class="card card-warning grafik-kiri">
+                                <div class="card-header head-grafik-kiri">
                                     <h3 class="card-title">@if (Auth::user()->namaOPD == 'Litbang') Produk Litbang
                                         @else Data Kominfo @endif</h3>
 
@@ -263,8 +263,8 @@
                         <!-- Kiri -->
                         <div class="col-md-6">
                             <!-- BAR CHART -->
-                            <div class="card card-success">
-                                <div class="card-header">
+                            <div class="card card-success grafik-kiri">
+                                <div class="card-header head-grafik-kiri">
                                     <h3 class="card-title">Statistik Pegawai</h3>
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
@@ -288,8 +288,8 @@
                         </div>
                         <div class="col-md-6">
                             <!-- PIE CHART -->
-                            <div class="card card-danger">
-                                <div class="card-header">
+                            <div class="card card-danger grafik-kiri">
+                                <div class="card-header head-grafik-kiri">
                                     <h3 class="card-title">Statistik Jabatan</h3>
 
                                     <div class="card-tools">

@@ -161,8 +161,8 @@
                         <!-- Kiri -->
                         <div class="col-md-6">
                             <!-- BAR CHART -->
-                            <div class="card card-success">
-                                <div class="card-header">
+                            <div class="card card-success grafik-kiri">
+                                <div class="card-header head-grafik-kiri">
                                     <h3 class="card-title">Statistik Pegawai</h3>
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse"><i
@@ -186,8 +186,8 @@
                         </div>
                         <div class="col-md-6">
                             <!-- PIE CHART -->
-                            <div class="card card-danger">
-                                <div class="card-header">
+                            <div class="card card-danger grafik-kiri">
+                                <div class="card-header head-grafik-kiri">
                                     <h3 class="card-title">Statistik Jabatan</h3>
 
                                     <div class="card-tools">
