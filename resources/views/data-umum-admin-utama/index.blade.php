@@ -49,8 +49,8 @@
                         <div class="row">
                             <div class="col-md-3">
                             </div>
-                            <div class="col-md-3">
-                                <div class="card shadow" style="width: 18rem;">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card shadow">
                                     <img class="card-img-top bg-primary" src="{!! asset('img/grafik.png') !!}"
                                         alt="Card image cap"
                                         style="max-width: 100%; min-width: 100%; max-height:200px; min-height:200px;">
@@ -61,8 +61,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card shadow" style="width: 18rem;">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="card shadow">
                                     <img class="card-img-top bg-success" src="{!! asset('img/tabel.png') !!}"
                                         alt="Card image cap"
                                         style="max-width: 100%; min-width: 100%; max-height:200px; min-height:200px;">
