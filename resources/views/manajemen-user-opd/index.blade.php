@@ -202,6 +202,12 @@
             $('#judulModal').html('Kunci Semua Akun Pengguna');
             $('#jenis').show();
         });
+        $(document).on('click', '.hapusUser', function () {
+            var id = $(this).data('id');
+            $('.modal-body form').prop('action', '/' + id);
+            $('#judulModal').html('Hapus Pengguna');
+            $('#jenis').hide();
+        });
     });
 </script>
 @endsection
