@@ -64,7 +64,7 @@
                         <i class="fas fa-print"></i>
                     </a>
 
-                    <a class="btn btn-dark kunci-semua" href="#" role="button" title="Hak Akses" data-toggle="modal"
+                    <a class="btn btn-dark mb-1 kunci-semua" href="#" role="button" title="Hak Akses" data-toggle="modal"
                         data-id="1" data-target="#formModalHapus">
                         <i class="fas fa-lock"> Kunci Semua</i>
                     </a>
