@@ -56,11 +56,11 @@
                     </div>
                     @endif
 
-                    <a class="btn btn-success" href="/admin/manajemen-user-opd/tambah" role="button" title="Tambah Pengguna">
+                    <a class="btn btn-success mb-1" href="/admin/manajemen-user-opd/tambah" role="button" title="Tambah Pengguna">
                         <i class="fas fa-plus"> Tambah Pengguna</i>
                     </a>
 
-                    <a class="btn btn-primary" href="#" role="button" title="Catak Data">
+                    <a class="btn btn-primary mb-1" href="#" role="button" title="Catak Data">
                         <i class="fas fa-print"></i>
                     </a>
 
