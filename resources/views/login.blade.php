@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <title>Login &mdash; Data Parsial Litbang</title>
+    <link rel="icon" href="{!! asset('img/logo.png') !!}">
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,7 +24,7 @@
 <body>
     <div id="app">
         <section class="section">
-            <div class="d-flex flex-wrap align-items-stretch">
+            <div class="d-flex flex-wrap align-items-stretch" style="background-image: url('{!! asset('img/bg.jpg') !!}');">
                 <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
                     <div class="p-4 m-3">
                         <img src="{!! asset('img/logo.png') !!}" alt="logo" width="80"
