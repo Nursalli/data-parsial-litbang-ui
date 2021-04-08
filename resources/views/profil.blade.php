@@ -52,24 +52,24 @@
                             <p>1234</p>
 
                             <label for="nama">Nama:</label>
-                            <p>Jhonal Las Vegas</p>
+                            <p>{{ Auth::user()->nama }}</p>
 
                             <label for="email">Email:</label>
-                            <p>jhonas@gmail.com</p>
+                            <p>{{ Auth::user()->email }}</p>
 
                             <label for="no_telepon">No Telepon:</label>
-                            <p>081234</p>
+                            <p>{{ Auth::user()->noTelepon }}</p>
                         </div>
 
                         <div class="col-md-3">
                             <label for="no_telepon">Username:</label>
-                            <p>omjhonal</p>
+                            <p>{{ Auth::user()->username }}</p>
 
                             <label for="role">Role:</label>
-                            <p>{{ $pageAdmin }}</p>
+                            <p>{{ Auth::user()->role }}</p>
 
                             <label for="role">Lingkup:</label>
-                            <p>Provinsi</p>
+                            <p>{{ Auth::user()->lingkup }}</p>
                         </div>
                     </div>
                 </div>

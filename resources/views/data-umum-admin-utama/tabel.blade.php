@@ -28,11 +28,16 @@
                     <p>Data Tabel OPD</p>
                 </div>
                 <div class="card-body">
-                    <a href="#detail" type="button" class="btn btn-primary mb-1" id="tombolPegawai">Data Umum Pegawai</a>
+                    <a href="#detail" type="button" class="btn btn-primary mb-1" id="tombolPegawai">Data Umum
+                        Pegawai</a>
                     <a href="#detail" type="button" class="btn btn-success mb-1" id="tombolKantor">Data Umum Kantor</a>
-                    <a href="#detail" type="button" class="btn btn-danger mb-1" id="tombolWebAplikasi">Data Umum Web/Aplikasi</a>
+                    <a href="#detail" type="button" class="btn btn-danger mb-1" id="tombolWebAplikasi">Data Umum
+                        Web/Aplikasi</a>
 
                     <div id="pegawai" class="mt-4" style="visibility: hidden;">
+                        <a class="btn btn-primary mb-2" href="#" role="button" title="Catak Data">
+                            <i class="fas fa-print"></i>
+                        </a>
                         <h6 class="text-bold">Data Umum Pegawai:</h6>
                         <table class="table table-bordered table-striped example1">
                             <thead>
@@ -40,6 +45,9 @@
                                     <th>No</th>
                                     <th>NIP</th>
                                     <th>Nama</th>
+                                    <th>No Telepon</th>
+                                    <th>Email</th>
+                                    <th>NPWP</th>
                                     <th>Golongan/Posisi</th>
                                     <th>Jenis Kelamin</th>
                                     <th>OAP/Non OAP</th>
@@ -52,6 +60,9 @@
                                     <td>@php echo $i+1; @endphp</td>
                                     <td>12345</td>
                                     <td>Nino</td>
+                                    <td>08123</td>
+                                    <td>email@gmail.com</td>
+                                    <td>453284723219</td>
                                     <td>Eslon II</td>
                                     <td>Laki-laki</td>
                                     <td>OAP</td>
@@ -64,6 +75,9 @@
                                     <th>No</th>
                                     <th>NIP</th>
                                     <th>Nama</th>
+                                    <th>No Telepon</th>
+                                    <th>Email</th>
+                                    <th>NPWP</th>
                                     <th>Golongan/Posisi</th>
                                     <th>Jenis Kelamin</th>
                                     <th>OAP/Non OAP</th>
@@ -73,7 +87,10 @@
                     </div>
 
                     <div id="kantor" class="mt-4" style="visibility: hidden;">
-                        <h6 class="text-bold mt-4">Data Umum Kantor:</h6>
+                        <a class="btn btn-primary mb-2" href="#" role="button" title="Catak Data">
+                            <i class="fas fa-print"></i>
+                        </a>
+                        <h6 class="text-bold">Data Umum Kantor:</h6>
                         <table class="table table-bordered table-striped example1">
                             <thead>
                                 <tr>
@@ -145,7 +162,10 @@
                     </div>
 
                     <div id="webAplikasi" class="mt-4" style="visibility: hidden;">
-                        <h6 class="text-bold mt-4">Data Umum Web/Aplikasi:</h6>
+                        <a class="btn btn-primary mb-2" href="#" role="button" title="Catak Data">
+                            <i class="fas fa-print"></i>
+                        </a>
+                        <h6 class="text-bold">Data Umum Web/Aplikasi:</h6>
                         <table class="table table-bordered table-striped example1">
                             <thead>
                                 <tr>
@@ -196,36 +216,37 @@
 
         $(document).on('click', '#tombolPegawai', function () {
             $('#pegawai').show();
-            $('#pegawai').css('visibility','visible');
+            $('#pegawai').css('visibility', 'visible');
 
             $('#kantor').hide();
-            $('#kantor').css('visibility','hidden');
+            $('#kantor').css('visibility', 'hidden');
 
             $('#webAplikasi').hide();
-            $('#webAplikasi').css('visibility','hidden');
+            $('#webAplikasi').css('visibility', 'hidden');
         });
 
         $(document).on('click', '#tombolKantor', function () {
             $('#pegawai').hide();
-            $('#pegawai').css('visibility','hidden');
+            $('#pegawai').css('visibility', 'hidden');
 
             $('#kantor').show();
-            $('#kantor').css('visibility','visible');
+            $('#kantor').css('visibility', 'visible');
 
             $('#webAplikasi').hide();
-            $('#webAplikasi').css('visibility','hidden');
+            $('#webAplikasi').css('visibility', 'hidden');
         });
 
         $(document).on('click', '#tombolWebAplikasi', function () {
             $('#pegawai').hide();
-            $('#pegawai').css('visibility','hidden');
+            $('#pegawai').css('visibility', 'hidden');
 
             $('#kantor').hide();
-            $('#kantor').css('visibility','hidden');
+            $('#kantor').css('visibility', 'hidden');
 
             $('#webAplikasi').show();
-            $('#webAplikasi').css('visibility','visible');
+            $('#webAplikasi').css('visibility', 'visible');
         });
     });
+
 </script>
 @endsection

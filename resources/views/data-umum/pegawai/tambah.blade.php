@@ -28,11 +28,11 @@
                     <h3 class="card-title">Tambah Pegawai</h3>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- form start -->
-                        <form role="form">
-                            <div class="card-body">
+                <!-- form start -->
+                <form role="form">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="nip">NIP</label>
                                     <input type="text" class="form-control" id="nip" placeholder="Masukkan NIP">
@@ -40,6 +40,21 @@
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
                                     <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama">
+                                </div>
+                                <div class="form-group">
+                                    <label for="no_telepon">No Telepon</label>
+                                    <input type="number" class="form-control" id="no_telepon"
+                                        placeholder="Masukkan No Telepon">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="npwp">NPWP</label>
+                                    <input type="number" class="form-control" id="npwp" placeholder="Masukkan NPWP">
                                 </div>
                                 <div class="form-group">
                                     <label>Golongan/Posisi</label>
@@ -68,11 +83,13 @@
                                         <option>Non OAP</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-success">Submit</button>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
+                    <div class="card-footer text-right">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
 </section>

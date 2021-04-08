@@ -38,6 +38,9 @@
                     <a href="#detail" type="button" class="btn btn-info mb-1" id="tombolMOU">Data Khusus MOU</a>
 
                     <div id="buku" class="mt-4" style="visibility: hidden;">
+                        <a class="btn btn-primary mb-2" href="#" role="button" title="Catak Data">
+                            <i class="fas fa-print"></i>
+                        </a>
                         <h6 class="text-bold">Data Khusus Buku:</h6>
                         <table class="table table-bordered table-striped example1">
                             <thead>
@@ -81,7 +84,10 @@
                     </div>
 
                     <div id="penelitian" class="mt-4" style="visibility: hidden;">
-                        <h6 class="text-bold mt-4">Data Khusus Penelitian:</h6>
+                        <a class="btn btn-primary mb-2" href="#" role="button" title="Catak Data">
+                            <i class="fas fa-print"></i>
+                        </a>
+                        <h6 class="text-bold">Data Khusus Penelitian:</h6>
                         <table class="table table-bordered table-striped example1">
                             <thead>
                                 <tr>
@@ -118,7 +124,10 @@
                     </div>
 
                     <div id="majalah" class="mt-4" style="visibility: hidden;">
-                        <h6 class="text-bold mt-4">Data Khusus Majalah:</h6>
+                        <a class="btn btn-primary mb-2" href="#" role="button" title="Catak Data">
+                            <i class="fas fa-print"></i>
+                        </a>
+                        <h6 class="text-bold">Data Khusus Majalah:</h6>
                         <table class="table table-bordered table-striped example1">
                             <thead>
                                 <tr>
@@ -155,7 +164,10 @@
                     </div>
 
                     <div id="jurnal" class="mt-4" style="visibility: hidden;">
-                        <h6 class="text-bold mt-4">Data Khusus Jurnal:</h6>
+                        <a class="btn btn-primary mb-2" href="#" role="button" title="Catak Data">
+                            <i class="fas fa-print"></i>
+                        </a>
+                        <h6 class="text-bold">Data Khusus Jurnal:</h6>
                         <table class="table table-bordered table-striped example1">
                             <thead>
                                 <tr>
@@ -192,7 +204,10 @@
                     </div>
 
                     <div id="mou" class="mt-4" style="visibility: hidden;">
-                        <h6 class="text-bold mt-4">Data Khusus MOU:</h6>
+                        <a class="btn btn-primary mb-2" href="#" role="button" title="Catak Data">
+                            <i class="fas fa-print"></i>
+                        </a>
+                        <h6 class="text-bold">Data Khusus MOU:</h6>
                         <table class="table table-bordered table-striped example1">
                             <thead>
                                 <tr>
@@ -246,88 +261,89 @@
 
         $(document).on('click', '#tombolBuku', function () {
             $('#buku').show();
-            $('#buku').css('visibility','visible');
+            $('#buku').css('visibility', 'visible');
 
             $('#penelitian').hide();
-            $('#penelitian').css('visibility','hidden');
+            $('#penelitian').css('visibility', 'hidden');
 
             $('#majalah').hide();
-            $('#majalah').css('visibility','hidden');
+            $('#majalah').css('visibility', 'hidden');
 
             $('#jurnal').hide();
-            $('#jurnal').css('visibility','hidden');
+            $('#jurnal').css('visibility', 'hidden');
 
             $('#mou').hide();
-            $('#mou').css('visibility','hidden');
+            $('#mou').css('visibility', 'hidden');
         });
 
         $(document).on('click', '#tombolPenelitian', function () {
             $('#buku').hide();
-            $('#buku').css('visibility','hidden');
+            $('#buku').css('visibility', 'hidden');
 
             $('#penelitian').show();
-            $('#penelitian').css('visibility','visible');
+            $('#penelitian').css('visibility', 'visible');
 
             $('#majalah').hide();
-            $('#majalah').css('visibility','hidden');
+            $('#majalah').css('visibility', 'hidden');
 
             $('#jurnal').hide();
-            $('#jurnal').css('visibility','hidden');
+            $('#jurnal').css('visibility', 'hidden');
 
             $('#mou').hide();
-            $('#mou').css('visibility','hidden');
+            $('#mou').css('visibility', 'hidden');
         });
 
         $(document).on('click', '#tombolMajalah', function () {
             $('#buku').hide();
-            $('#buku').css('visibility','hidden');
+            $('#buku').css('visibility', 'hidden');
 
             $('#penelitian').hide();
-            $('#penelitian').css('visibility','hidden');
+            $('#penelitian').css('visibility', 'hidden');
 
             $('#majalah').show();
-            $('#majalah').css('visibility','visible');
+            $('#majalah').css('visibility', 'visible');
 
             $('#jurnal').hide();
-            $('#jurnal').css('visibility','hidden');
+            $('#jurnal').css('visibility', 'hidden');
 
             $('#mou').hide();
-            $('#mou').css('visibility','hidden');
+            $('#mou').css('visibility', 'hidden');
         });
 
         $(document).on('click', '#tombolJurnal', function () {
             $('#buku').hide();
-            $('#buku').css('visibility','hidden');
+            $('#buku').css('visibility', 'hidden');
 
             $('#penelitian').hide();
-            $('#penelitian').css('visibility','hidden');
+            $('#penelitian').css('visibility', 'hidden');
 
             $('#majalah').hide();
-            $('#majalah').css('visibility','hidden');
+            $('#majalah').css('visibility', 'hidden');
 
             $('#jurnal').show();
-            $('#jurnal').css('visibility','visible');
+            $('#jurnal').css('visibility', 'visible');
 
             $('#mou').hide();
-            $('#mou').css('visibility','hidden');
+            $('#mou').css('visibility', 'hidden');
         });
 
         $(document).on('click', '#tombolMOU', function () {
             $('#buku').hide();
-            $('#buku').css('visibility','hidden');
+            $('#buku').css('visibility', 'hidden');
 
             $('#penelitian').hide();
-            $('#penelitian').css('visibility','hidden');
+            $('#penelitian').css('visibility', 'hidden');
 
             $('#majalah').hide();
-            $('#majalah').css('visibility','hidden');
+            $('#majalah').css('visibility', 'hidden');
 
             $('#jurnal').hide();
-            $('#jurnal').css('visibility','hidden');
+            $('#jurnal').css('visibility', 'hidden');
 
             $('#mou').show();
-            $('#mou').css('visibility','visible');
+            $('#mou').css('visibility', 'visible');
         });
     });
+
 </script>
 @endsection

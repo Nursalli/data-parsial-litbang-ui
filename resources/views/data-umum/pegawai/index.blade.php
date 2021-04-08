@@ -74,6 +74,9 @@
                                 <th>No</th>
                                 <th>NIP</th>
                                 <th>Nama</th>
+                                <th>No Telepon</th>
+                                <th>Email</th>
+                                <th>NPWP</th>
                                 <th>Golongan/Posisi</th>
                                 <th>Jenis Kelamin</th>
                                 <th>OAP/Non OAP</th>
@@ -90,6 +93,9 @@
                                 <td>@php echo $i+1; @endphp</td>
                                 <td>12345</td>
                                 <td>Nino</td>
+                                <td>08123</td>
+                                <td>email@gmail.com</td>
+                                <td>453284723219</td>
                                 <td>Eslon II</td>
                                 <td>Laki-laki</td>
                                 <td>OAP</td>
@@ -113,6 +119,9 @@
                                 <th>No</th>
                                 <th>NIP</th>
                                 <th>Nama</th>
+                                <th>No Telepon</th>
+                                <th>Email</th>
+                                <th>NPWP</th>
                                 <th>Golongan/Posisi</th>
                                 <th>Jenis Kelamin</th>
                                 <th>OAP/Non OAP</th>
