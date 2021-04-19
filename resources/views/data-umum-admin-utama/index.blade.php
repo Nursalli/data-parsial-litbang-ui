@@ -51,7 +51,7 @@
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="card shadow">
-                                    <img class="card-img-top bg-primary" src="{!! asset('img/grafik.png') !!}"
+                                    <img class="card-img-top bg-primary" src="{!! asset('img/logoGraf.png') !!}"
                                         alt="Card image cap"
                                         style="max-width: 100%; min-width: 100%; max-height:200px; min-height:200px;">
                                     <div class="card-body">
@@ -63,7 +63,7 @@
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="card shadow">
-                                    <img class="card-img-top bg-success" src="{!! asset('img/tabel.png') !!}"
+                                    <img class="card-img-top bg-success" src="{!! asset('img/logoTable.png') !!}"
                                         alt="Card image cap"
                                         style="max-width: 100%; min-width: 100%; max-height:200px; min-height:200px;">
                                     <div class="card-body">

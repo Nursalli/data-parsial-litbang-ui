@@ -110,7 +110,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col-5 text-center">
-                                                    <img src="{!! asset('img/web.png') !!}" alt=""
+                                                    <img src="{!! asset('img/logoPC2.png') !!}" alt=""
                                                         class="img-square img-fluid">
                                                 </div>
                                             </div>
@@ -146,7 +146,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col-5 text-center">
-                                                    <img src="{!! asset('img/app.jpg') !!}" alt=""
+                                                    <img src="{!! asset('img/logoAps2.png') !!}" alt=""
                                                         class="img-square img-fluid">
                                                 </div>
                                             </div>
