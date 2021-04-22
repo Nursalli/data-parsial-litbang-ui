@@ -59,7 +59,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col-5 text-center">
-                                                    <img src="{!! asset('img/logo.png') !!}" alt=""
+                                                    <img src="{!! asset('img/ShadowPabar1.png') !!}" alt=""
                                                         class="img-square img-fluid">
                                                 </div>
                                             </div>
@@ -110,7 +110,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="col-5 text-center">
-                                                    <img src="{!! asset('img/logoPC2.png') !!}" alt=""
+                                                    <img src="{!! asset('img/logoPC2Revisi.png') !!}" alt=""
                                                         class="img-square img-fluid">
                                                 </div>
                                             </div>
